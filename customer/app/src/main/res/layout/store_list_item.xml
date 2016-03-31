@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitecolor"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/ll_view_map"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:src="@drawable/loc_icon"/>
+
+            <TextView
+                android:id="@+id/store_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+
+                android:textColor="@color/blackcolor"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/store_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:singleLine="false"
+
+            android:textColor="@color/black_color" />
+
+        <TextView
+            android:id="@+id/store_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:textColor="@color/black_color" />
+        <TextView
+            android:id="@+id/store_timing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/black_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/store_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="right"
+
+                android:textColor="@color/primary"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/store_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="5dp"
+
+                android:textColor="@color/primary"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="right">
+        <Button
+            android:id="@+id/btn_pick_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+            android:background="@drawable/pickupbackground"
+            android:capitalize="none"
+            android:padding="10dp"
+            android:text="Pick from here"
+            android:textColor="@color/accent" />
+</LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!-- <ImageView
+            android:id="@+id/btn_view_on_map"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+
+            android:src="@drawable/marker"
+            android:scaleType="fitXY"
+            android:drawablePadding="0dp" />-->

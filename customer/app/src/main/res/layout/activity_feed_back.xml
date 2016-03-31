@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.zetagile.foodcart.FeedBackActivity">
+
+
+    <LinearLayout
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/no_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical"
+        android:text="No Comments!"
+        android:textColor="@color/primary"
+        android:visibility="gone"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/comments"
+        android:gravity="end">
+
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/btnLoginToLike"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="@drawable/com_facebook_button_like_background"-->
+        <!--android:clickable="true"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="7.5dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="7.5dp"-->
+        <!--android:src="@drawable/com_facebook_button_icon" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvLogin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="2dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:text="Login to Post"-->
+        <!--android:textColor="@color/whitecolor"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--</LinearLayout>-->
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/post_data"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/feedback"
+            app:backgroundTint="@color/facebookcolor"
+            app:borderWidth="1dp"
+            app:fabSize="mini"
+            app:layout_anchorGravity="bottom|right|end"
+            app:layout_behavior="com.codepath.floatingactionbuttontest.ScrollAwareFABBehavior" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

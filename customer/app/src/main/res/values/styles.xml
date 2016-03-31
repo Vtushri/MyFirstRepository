@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="CartTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:editTextStyle">@style/editTextFontStyle</item>
+    </style>
+
+    <style name="editTextFontStyle" parent="android:Widget.EditText">
+
+        <item name="android:fontFamily">sans-serif</item>
+
+    </style>
+
+    <!--<style name="ToolBarTheme" parent="CartTheme">
+        <item name="android:colorBackground">@color/white_color</item>
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+    <style name="CartTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="CartTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+</resources>

@@ -1,0 +1,58 @@
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="home_page_category_name_text_size">40dp</dimen>
+
+    <!--<dimen name="home_page_product_title_text_size"></dimen>-->
+    <!--<dimen name="home_page_product_price1_text_size"></dimen>-->
+    <!--<dimen name="home_page_product_price2_text_size"></dimen>-->
+
+    <!--<dimen name="btn_height">40dp</dimen>-->
+    <!--<dimen name="btn_text">16sp</dimen>-->
+
+    <!--<dimen name="product_details_product_name_text_size"></dimen>-->
+    <!--<dimen name="product_details_product_price1_text_size"></dimen>-->
+    <!--<dimen name="product_details_product_price2_text_size"></dimen>-->
+    <!--<dimen name="product_details_product_desc_text_size"></dimen>-->
+    <!--<dimen name="product_details_product_property_table_border_thickness"></dimen>-->
+    <!--<dimen name="product_details_product_property_name_text_size"></dimen>-->
+    <!--<dimen name="product_details_product_property_value_text_size"></dimen>-->
+    <!--<dimen name="product_details_product_specs_height"></dimen>-->
+    <!--<dimen name="product_details_product_specs_text_size"></dimen>-->
+
+    <!--<dimen name="cart_item_title_text_size"></dimen>-->
+    <!--<dimen name="cart_item_price_text_size"></dimen>-->
+
+    <!--<dimen name="category_products_grid_product_title_size"></dimen>-->
+    <!--<dimen name="category_products_grid_product_price1_size"></dimen>-->
+    <!--<dimen name="category_products_grid_product_price2_size"></dimen>-->
+
+    <!--<dimen name="category_products_list_product_title_size"></dimen>-->
+    <!--<dimen name="category_products_list_product_price1_size"></dimen>-->
+    <!--<dimen name="category_products_list_product_price2_size"></dimen>-->
+
+    <!--<dimen name="invoice_product_name_text_size"></dimen>-->
+    <!--<dimen name="invoice_product_price_text_size"></dimen>-->
+    <!--<dimen name="invoice_product_qty_text_size"></dimen>-->
+
+    <!--<dimen name="store_name_text_size"></dimen>-->
+    <!--<dimen name="store_address_text_size"></dimen>-->
+    <!--<dimen name="store_city_text_size"></dimen>-->
+    <!--<dimen name="store_city_time_size"></dimen>-->
+    <!--<dimen name="store_city_distance_size"></dimen>-->
+
+    <!--<dimen name="order_id_size"></dimen>-->
+    <!--<dimen name="token_size"></dimen>-->
+    <!--<dimen name="order_amount"></dimen>-->
+    <!--<dimen name="order_time"></dimen>-->
+    <!--<dimen name="order_date"></dimen>-->
+
+
+    <!--<dimen name="small_padding"></dimen>-->
+    <!--<dimen name="medium_padding"></dimen>-->
+    <!--<dimen name="large_padding"></dimen>-->
+
+    <!--<dimen name="small_margin"></dimen>-->
+    <!--<dimen name="medium_margin"></dimen>-->
+    <!--<dimen name="large_margin"></dimen>-->
+
+</resources>

@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context="com.example.dflip.cart.MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/vendor_splash_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:focusable="true"/>
+
+                <EditText
+                    android:id="@+id/tv_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/loginscreen_ed_drw"
+                    android:gravity="center"
+                    android:hint="@string/login_mobile_no"
+                    android:inputType="phone"
+                    android:padding="15dp"
+                    android:singleLine="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginscreen_ed_drw"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+           >
+            <EditText
+                android:id="@+id/tv_password"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="@string/login_password"
+                android:padding="15dp"
+                android:password="true"
+                android:singleLine="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="35dp"
+                android:src="@drawable/eye_visibility_icon"
+               android:padding="7dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/login_eye_img"
+                />
+
+        </LinearLayout>
+
+
+              <!--  <CheckBox
+                    android:id="@+id/cb_show_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:buttonTint="@color/whitecolor"
+                    android:text="Show password"
+                    android:textColor="@color/whitecolor"
+                    android:textSize="14sp" />
+-->
+                <Button
+                    android:id="@+id/btn_choose_option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/loginbuttondrw"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Login"
+                    android:textColor="@color/whitecolor"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+           <!-- <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="Forgot password?"
+                android:textColor="@color/whitecolor" />-->
+
+            <LinearLayout
+                android:id="@+id/fb_google"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Connect with:"
+                    android:textColor="@color/whitecolor"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/google" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/facebook" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttonbackgroundregister"
+            android:text="Register"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/whitecolor"
+            android:textSize="28sp" />
+
+
+</RelativeLayout>

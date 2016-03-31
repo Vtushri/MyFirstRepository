@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/cart_buy_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add_to_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.5"
+            android:background="@color/accent"
+            android:text="Add to Cart"
+            android:textColor="@color/whitecolor"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btn_buy_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.5"
+            android:background="@color/primary"
+            android:text="Buy Now"
+            android:textColor="@color/white_color"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cart_buy_btns"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="match_parent"
+                android:layout_height="243dp"
+                android:layout_gravity="center"
+                android:drawingCacheQuality="high"
+                android:scaleType="centerInside"
+                android:fitsSystemWindows="true"/>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/back_details"
+                    android:layout_width="45dp"
+                    android:padding="3dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_arrow"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="12dp"
+                    android:padding="3dp"
+                    android:text="Category Name "
+                    android:textColor="@color/whitecolor"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="6dp"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/product_offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs180 "
+                    android:textColor="@color/whitecolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/product_actual_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs200"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/whitecolor"
+
+                    />
+              <!--  <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <RatingBar
+                        android:id="@+id/indicator_ratingbar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip" />
+                </RelativeLayout>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/product_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whitecolor"
+                    android:gravity="left|right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:text=""/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitecolor" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ingredients"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Ingredients"
+                    android:textColor="@color/whitecolor"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:padding="5dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/right_arrow"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitecolor"  />
+      <!--      <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/choosepickupstore"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Choose PickUp Store"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:padding="5dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/right_arrow"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blackcolor" />
+
+            <LinearLayout
+                android:id="@+id/table_fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/no_specs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="No specifications"
+                    android:textColor="#ffff0000"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/product_property_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="40dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="eechiba1.desigining.zetagile.tabsforfreshbake.DetailsScreen">
+
+        <ImageView
+            android:id="@+id/detailsImage"
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image_stub" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+           >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_revert" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:text="Category Name "
+            android:textColor="@color/primary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/product_offer_price"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs200 "
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_actual_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs200"
+            android:textColor="@color/primary"
+
+            />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <RatingBar
+                android:id="@+id/indicator_ratingbar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/product_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" can be used to get the rating from the user. The Rating returns a floating-point number. It may be 2.0, 3.5, 4.0 etc.
+
+Android RatingBar displays the rating in stars. Android RatingBar is the subclass of AbsSeekBar class." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="Ingredients"
+            android:textColor="@color/blackcolor"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right_arrow"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackcolor" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="Choose PickUp Store"
+            android:textColor="@color/blackcolor"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right_arrow"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackcolor" />
+        </LinearLayout>
+    </ScrollView>
+   <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/activity_bg_color"
+                android:padding="10dp"
+                android:text="Specifications"
+                android:textColor="@color/black_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+</LinearLayout>-->

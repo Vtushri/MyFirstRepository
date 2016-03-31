@@ -1,0 +1,337 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OrderSummary"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_summary_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/whitecolor"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Order Summary"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/ll_hr_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/order_summary_items"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/primary"/>
+
+        <LinearLayout
+            android:id="@+id/order_summery_taxlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whitecolor"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_below="@+id/ll_hr_line">
+
+            <LinearLayout
+                android:id="@+id/order_summary_ll_placeholders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:singleLine="true"
+                    android:text="Products"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="Qty"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="right"
+                    android:text="Price"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <com.zetagile.foodcart.recyclerview.CustomRecyclerView
+                android:id="@+id/order_summery_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whitecolor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_above="@+id/order_summery_ll"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/blackcolor"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:singleLine="true"
+                    android:text="Sub Total : "
+                    android:textColor="@color/blackcolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/order_summery_subtotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="4600"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/offer_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(1 offers applied)"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/vat_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/vat_label"
+                    android:textColor="@color/blackcolor" />
+
+                <TextView
+                    android:id="@+id/order_summery_vat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="14.5%"
+                    android:textColor="@color/blackcolor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/service_tax_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/service_tax_label"
+                    android:textColor="@color/blackcolor" />
+
+                <TextView
+                    android:id="@+id/order_summery_servicetax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="25"
+                    android:textColor="@color/blackcolor" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/service_charges_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/service_charges_label"
+                    android:textColor="@color/blackcolor" />
+
+                <TextView
+                    android:id="@+id/order_summary_service_charge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="25"
+                    android:textColor="@color/blackcolor" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/other_charges_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/other_charges_label"
+                    android:textColor="@color/blackcolor" />
+
+                <TextView
+                    android:id="@+id/order_summary_other_charges"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="25"
+                    android:textColor="@color/blackcolor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_above="@+id/order_summery_ll"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/blackcolor"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/total_amount_label"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/order_summery_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="$ 16000"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_summery_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_summery_taxlayout"
+            android:background="@color/whitecolor"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Payment Option: "/>
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/cod">
+
+                <RadioButton
+                    android:id="@+id/cop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash On Delivery"
+                    android:checked="true"
+                    android:textColor="@color/blackcolor" />
+
+                <RadioButton
+                    android:id="@+id/pg_paypal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay using PayPal"
+                    android:textColor="@color/blackcolor" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/order_summery_continue"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_summery_payment"
+                android:background="@color/signup_button_color"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:text="Confirm order"
+                android:textColor="@color/whitecolor"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

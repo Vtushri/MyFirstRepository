@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:gravity="center">
+
+             <ImageView
+                android:id="@+id/cart_item_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cart_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:maxLines="1"
+                android:textColor="@color/blackcolor"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button_minus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@color/whitecolor"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/item_qty"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@color/activity_bg_color"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="1"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_plus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@color/whitecolor"
+                    android:text="+" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingRight="6dp">
+
+            <TextView
+                android:id="@+id/cart_offer_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackcolor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cart_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btn_remove_item"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom"
+                android:padding="3dp"
+                android:text="remove"
+                android:maxLines="1"
+                android:textColor="@color/cart_bottom_bg"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

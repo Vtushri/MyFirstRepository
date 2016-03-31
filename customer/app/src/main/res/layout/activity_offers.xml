@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/offer_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/no_offer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical"
+        android:text="No Offers!"
+        android:textColor="@color/primary"
+        android:visibility="gone"
+        android:textSize="20sp" />
+</RelativeLayout>

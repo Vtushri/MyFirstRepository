@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nonebuttongrid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="5dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/none_product_grid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:elevation="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@drawable/grid_list_selector"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+
+</RelativeLayout>

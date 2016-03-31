@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.zetagile.foodcart.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_splash"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+       <!-- <TextView
+            android:id="@+id/spalsh_maintext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Simple and Fast"
+            android:textColor="@color/whitecolor"
+            android:textSize="18sp"
+            android:textStyle="bold" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/splash_viandd_background"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/poweredby"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="right"
+                android:text="Powered by"
+                android:textColor="@color/blackcolor"
+
+                />
+
+            <ImageView
+                android:id="@+id/img_splash"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.5"
+                android:scaleType="fitStart"
+                android:src="@drawable/viandd_logo" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/splash_signup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/signup_button_color"
+                android:text="SIGNUP"
+                android:textColor="@color/whitecolor"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/splash_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/login_button_color"
+                android:text="LOGIN"
+                android:textColor="@color/whitecolor"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ll_splash"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/continue_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="Skip "
+            android:textColor="@color/whitecolor"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/vendor_splash_logo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout><!-- <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="260dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="Drive Thru Application"
+        android:textColor="@color/accent_color"
+        android:typeface="sans"
+        android:textSize="10sp" />--><!--#44D0DC-->

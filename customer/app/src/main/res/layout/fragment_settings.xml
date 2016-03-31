@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:fitsSystemWindows="true"
+        android:src="@drawable/profile_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_settings_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="15dp"
+            android:textColor="@color/whitecolor"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_name_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@android:drawable/ic_menu_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_settings_phoneno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="15dp"
+            android:textColor="@color/whitecolor"
+            android:textSize="20sp" />
+
+        <!--<ImageView
+            android:id="@+id/img_phoneno_edit"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@android:drawable/ic_menu_edit" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_settings_emailid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="15dp"
+            android:textColor="@color/whitecolor"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_emailid_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@android:drawable/ic_menu_edit" />
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_settings_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="15dp"
+            android:text="Notifications"
+            android:textColor="@color/whitecolor"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/ch_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="@color/whitecolor"
+            android:padding="8dp"
+            android:textSize="20sp" />
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/ll_logout"
+        >
+
+        <TextView
+            android:id="@+id/tv_settings_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Logout"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/whitecolor"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_logout_edit"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+             android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/logout"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
