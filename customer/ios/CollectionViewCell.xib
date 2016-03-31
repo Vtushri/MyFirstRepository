@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FtC-Vv-h8a">
+                        <rect key="frame" x="8" y="13" width="164" height="117"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="117" id="1bu-KY-vna"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F3-6E-NIP">
+                        <rect key="frame" x="8" y="171" width="81" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="81" id="JeK-ug-aph"/>
+                            <constraint firstAttribute="height" constant="21" id="M6x-Sc-4l0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOJ-Si-yGa">
+                        <rect key="frame" x="128" y="167" width="44" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="cartbtnckd:" destination="gTV-IL-0wX" eventType="touchUpInside" id="6xI-rd-tuR"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjE-ZX-Koq">
+                        <rect key="frame" x="8" y="139" width="164" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="FtC-Vv-h8a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="7YQ-4P-arb"/>
+                <constraint firstItem="2F3-6E-NIP" firstAttribute="bottom" secondItem="AOJ-Si-yGa" secondAttribute="bottom" id="Chq-0u-8hf"/>
+                <constraint firstItem="AOJ-Si-yGa" firstAttribute="top" secondItem="RjE-ZX-Koq" secondAttribute="bottom" constant="7" id="Exv-9v-vFK"/>
+                <constraint firstItem="RjE-ZX-Koq" firstAttribute="top" secondItem="FtC-Vv-h8a" secondAttribute="bottom" constant="9" id="ImO-vO-5KV"/>
+                <constraint firstItem="2F3-6E-NIP" firstAttribute="top" secondItem="RjE-ZX-Koq" secondAttribute="bottom" constant="11" id="Jgp-RL-GDS"/>
+                <constraint firstItem="FtC-Vv-h8a" firstAttribute="leading" secondItem="RjE-ZX-Koq" secondAttribute="leading" id="LW9-kr-olV"/>
+                <constraint firstItem="AOJ-Si-yGa" firstAttribute="leading" secondItem="2F3-6E-NIP" secondAttribute="trailing" constant="39" id="Mm1-wA-Tzw"/>
+                <constraint firstAttribute="trailing" secondItem="RjE-ZX-Koq" secondAttribute="trailing" constant="8" id="Nzp-EW-Ij0"/>
+                <constraint firstAttribute="trailing" secondItem="AOJ-Si-yGa" secondAttribute="trailing" constant="8" id="XiP-Q9-vXb"/>
+                <constraint firstItem="FtC-Vv-h8a" firstAttribute="trailing" secondItem="RjE-ZX-Koq" secondAttribute="trailing" id="flH-bo-bMZ"/>
+                <constraint firstAttribute="bottom" secondItem="AOJ-Si-yGa" secondAttribute="bottom" constant="8" id="hYE-AO-QkB"/>
+                <constraint firstItem="AOJ-Si-yGa" firstAttribute="top" secondItem="RjE-ZX-Koq" secondAttribute="bottom" constant="7" id="pvT-y7-uOp"/>
+                <constraint firstItem="RjE-ZX-Koq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="tjP-vO-avK"/>
+                <constraint firstItem="2F3-6E-NIP" firstAttribute="leading" secondItem="RjE-ZX-Koq" secondAttribute="leading" id="yOp-aM-lj8"/>
+            </constraints>
+            <size key="customSize" width="180" height="200"/>
+            <connections>
+                <outlet property="cartBtn" destination="AOJ-Si-yGa" id="K8a-SG-O1a"/>
+                <outlet property="cellImage" destination="FtC-Vv-h8a" id="LlW-fU-ZxL"/>
+                <outlet property="cellName" destination="RjE-ZX-Koq" id="Vmy-oY-Ngi"/>
+                <outlet property="cellPrice" destination="2F3-6E-NIP" id="1XJ-6n-cjc"/>
+            </connections>
+            <point key="canvasLocation" x="362" y="153"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zetagile.foodcart.NavigationDrawer">
+
+    <group android:menuCategory="container" android:orderInCategory="2">
+        <item
+            android:id="@+id/menu_offers"
+            android:title="Offers" />
+
+        <item
+            android:id="@+id/menu_stores"
+            android:title="Stores" />
+
+    </group>
+    <group android:menuCategory="container" android:orderInCategory="1">
+
+        <item
+            android:id="@+id/menu_register"
+            android:title="Register"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/menu_login"
+            android:title="Login"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/menu_user_profile"
+            android:title="User Profile" />
+        <item
+            android:id="@+id/menu_logout"
+            android:title="Logout" />
+        <item
+            android:id="@+id/menu_orders"
+            android:title="My orders" />
+    </group>
+    <group android:menuCategory="container" android:orderInCategory="3">
+        <item
+            android:id="@+id/menu_policy"
+            android:title="Policy" />
+        <item
+            android:id="@+id/menu_feedback"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/menu_about"
+            android:title="About" />
+    </group>
+
+</menu>

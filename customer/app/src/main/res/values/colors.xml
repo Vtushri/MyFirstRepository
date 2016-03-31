@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--
+    LoginActivity-->
+ <!--   <color name="horizontal_line">#ECE7F4</color>
+    <color name="tc_forgot_password">#ffffffff</color>
+    <color name="tc_register">#ffffffff</color>
+    <color name="tc_login_heading">#ffffffff</color>
+    <color name="tc_login_button">#ff60030d</color>
+    <color name="bg_login_tv_forgot_pw_color">#ff60030d</color>
+    <color name="bg_login_btn_login_color">#ECE7F4</color>
+    <color name="bg_login_tv_register_color">#ff60030d</color>
+    <color name="login_view_line_color">#ff60030d</color>
+    <color name="bg_login_tv_login_color">#ffbf50b5</color>-->
+
+
+    <!--SignUpActivity-->
+    <color name="sign_up_page_new_user_sign_up">#ff60030d</color>
+    <color name="bg_sign_up">#ECE7F4</color>
+    <color name="tc_sign_up">#212121</color>
+    <color name="bg_reset">#ECE7F4</color>
+    <color name="tc_reset">#212121</color>
+    <color name="sign_up_layout_tc_already_have_account">#212121</color>
+
+
+    <!--Invoice Activity and fragment-->
+    <color name="tc_invoice_list_item_order_id">#212121</color>
+    <color name="tc_invoice_list_item_time">#212121</color>
+    <color name="tc_invoice_list_item_date">#212121</color>
+    <color name="tc_invoice_list_invoice_amt">#212121</color>
+
+    <color name="tc_invoice_list_item_time_text">#212121</color>
+    <color name="tc_invoice_list_item_date_text">#212121</color>
+    <color name="bg_layout_invoice_list_item">#ffffffff</color>
+
+    <color name="tc_invoice_list_invoice_total_amt_text">#212121</color>
+
+    <color name="tc_invoice_product_list_item_name">#212121</color>
+    <color name="tc_invoice_product_list_item_price">#212121</color>
+    <color name="tc_invoice_product_list_item_quantity">#212121</color>
+    <color name="tc_token_color">#ffff081b</color>
+
+
+    <!--BuyNowActivity-->
+    <color name="bg_layout_proceed_to_buy">#ffffffff</color>
+    <color name="bg_btn_proceed_to_buy">#ECE7F4</color>
+    <color name="tc_btn_proceed_to_buy">#212121</color>
+
+    <!--ProductDetailsActivity-->
+    <color name="tc_product_property_name">#212121</color>
+    <color name="tc_product_property_value">#212121</color>
+    <color name="bg_product_property_layout">#212121</color>
+    <color name="product_property_border">#212121</color>
+    <color name="tc_product_details_product_name_color">#212121</color>
+    <color name="tc_product_details_actual_price_color">#212121</color>
+    <color name="tc_product_details_offer_price_color">#212121</color>
+    <color name="tc_product_details_product_desc_color">#212121</color>
+    <color name="bg_product_details_specs_color">#ECE7F4</color>
+    <color name="tc_product_details_specs_color">#212121</color>
+    <color name="bg_btn_add_to_cart_color">#ECE7F4</color>
+    <color name="bg_btn_buy_now_color">#ECE7F4</color>
+    <color name="tc_btn_add_to_cart_color">#212121</color>
+    <color name="tc_btn_buy_now_color">#212121</color>
+    <color name="bg_product_details_bottom_layout">#ffffffff</color>
+
+    <!--OfferActivity-->
+    <color name="bg_offer_desc">#212121</color>
+    <color name="bg_offer_validity">#ffffffff</color>
+    <color name="bg_offer_date">#212121</color>
+    <color name="tc_offer_desc">#ffffffff</color>
+    <color name="tc_offer_validity">#212121</color>
+    <color name="tc_offer_date">#ffffffff</color>
+
+
+    <!--CartActivity-->
+    <color name="bg_btn_clear_cart_color">#ECE7F4</color>
+    <color name="bg_btn_check_out_color">#ECE7F4</color>
+    <color name="tc_cart_item_title">#212121</color>
+    <color name="tc_cart_item_price">#212121</color>
+    <color name="tc_btn_clear_cart_color">#212121</color>
+    <color name="tc_btn_check_out_color">#212121</color>
+    <color name="tc_dialog_total_price">#212121</color>
+    <color name="tc_btn_confirm">#212121</color>
+    <color name="bg_btn_confirm">#ECE7F4</color>
+    <color name="tc_cart_item_item_name_color">#212121</color>
+    <color name="tc_cart_item_price_color">#212121</color>
+
+
+    <!--SplashActivity-->
+    <color name="tc_Please_enable_your_location_service">#212121</color>
+    <color name="bg_btn_location_enable">#ECE7F4</color>
+    <color name="tc_btn_location_enable">#212121</color>
+    <color name="tc_splash_bottom_text">#212121</color>
+
+
+    <!--StoreListActivity and Fragment-->
+    <color name="tc_store_name">#212121</color>
+    <color name="tc_store_address">#212121</color>
+    <color name="tc_store_city">#212121</color>
+    <color name="tc_store_distance">#212121</color>
+    <color name="tc_store_time">#212121</color>
+
+    <color name="bg_store_name">#212121</color>
+    <color name="bg_store_address">#212121</color>
+    <color name="bg_store_city">#212121</color>
+    <color name="bg_store_distance">#212121</color>
+    <color name="bg_store_time">#212121</color>
+
+    <color name="tc_btn_store_map">#212121</color>
+    <color name="bg_btn_store_map">#ECE7F4</color>
+
+    <color name="tc_btn_proceed_map">#212121</color>
+    <color name="bg_btn_proceed_map">#ECE7F4</color>
+
+
+    <!--Products List and Grid-->
+    <color name="tc_list_item_product_title_color">#212121</color>
+    <color name="tc_list_item_product_price1">#212121</color>
+    <color name="tc_list_item_product_price2">#212121</color>
+
+    <color name="tc_productList_product_title_color">#212121</color>
+    <color name="tc_productList_product_price1_color">#212121</color>
+    <color name="tc_productList_product_price2_color">#212121</color>
+    <color name="tc_grid_item_product_name">#212121</color>
+
+
+    <!--MainActivity-->
+    <color name="holo_blue_dark">#212121</color>
+
+    <color name="bg_homepage_category_color">#ECE7F4</color>
+
+    <color name="tc_home_category_name">#212121</color>
+    <color name="tc_home_category_name_arrows">#212121</color>
+
+    <color name="bg_home_category_name">#D1C4E9</color>
+    <color name="border_home_category_name">#B6B6B6</color>
+
+    <color name="tc_homepage_product_title_color">#212121</color>
+    <color name="tc_homepage_product_price1_color">#212121</color>
+    <color name="tc_homepage_product_price2_color">#727272</color>
+
+
+    <!--Navigation Drawer-->
+    <color name="bg_nav_draw_menu_item">#ECE7F4</color>
+    <color name="tc_nav_draw_menu_item">#212121</color>
+    <color name="bg_actionbar_color">#009688</color>
+    <color name="bg_nav_drawer_color">#ECE7F4</color>
+    <color name="bg_nav_draw_menu_text">#ECE7F4</color>
+    <color name="tc_nav_draw_menu_text">#ECE7F4</color>
+    <color name="bg_nav_draw_item">#ECE7F4</color>
+    <color name="tc_nav_draw_item">#212121</color>
+
+
+    <!--Background of every activity-->
+    <color name="bg_activity">#ffffffff</color>
+
+    <!--Alternate List Color-->
+    <color name="bg_alternate_list_color">#9dffdbfa</color>
+    <color name="bg_home_products_fragment">#ffffffff</color>
+    <color name="total_price">#EA4F71</color>
+
+    <color name="activity_bg_color">#eaeded</color>
+    <!--<color name="accent_color">#ff029589</color>-->
+    <color name="white_color">#FFFFFF</color>
+    <color name="black_color">#575757</color>
+    <color name="light_accent_color">#c602c8b4</color>
+
+    <color name="primary">#036b74</color>
+    <color name="primary_dark">#FF1B5054</color>
+    <color name="accent">#f9a333</color>
+    <color name="whitecolor">#ffffff</color>
+    <color name="blackcolor">#212121</color>
+    <color name="seeallbackground">#FFC79E7B</color>
+   <color name="cart_bottom_bg">#1DAAF0</color>
+   <color name="facebookcolor">#344d83</color>
+   <color name="login_button_color">#065b8c</color>
+   <color name="signup_button_color">#1b9e07</color>
+</resources>
+

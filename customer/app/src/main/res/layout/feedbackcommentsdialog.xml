@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_comment_dialog"
+        android:textColor="@color/blackcolor"
+        android:hint="comment please..."
+        android:background="@drawable/loginscreen_ed_drw"
+        android:layout_margin="16dp"
+        android:padding="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_cancel"
+            android:text="Cancel"
+            android:layout_margin="10dp"
+            android:textColor="@color/whitecolor"
+            android:background="@color/facebookcolor"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_submit"
+            android:text="Submit"
+            android:layout_margin="10dp"
+            android:textColor="@color/whitecolor"
+            android:background="@color/facebookcolor"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

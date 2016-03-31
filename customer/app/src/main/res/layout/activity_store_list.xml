@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/store_list_layout"
+    android:background="@drawable/bg"
+    tools:context="com.zetagile.foodcart.StoreListActivity">
+
+    <TextView
+        android:id="@+id/tv_store_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/whitecolor"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Select Store"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/ll_hr_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tv_store_list_title"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/primary"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/store_list_view"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        android:layout_below="@id/ll_hr_line">
+
+    </ListView>
+
+</RelativeLayout>

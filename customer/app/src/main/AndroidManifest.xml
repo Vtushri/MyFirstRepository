@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zetagile.foodcart"
+    android:versionCode="5"
+    android:versionName="1.1.1">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/vendor_icon"
+        android:largeHeap="true"
+        android:logo="@drawable/logo"
+        android:theme="@style/CartTheme"
+	    android:label="@string/app_name">
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_map_api_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_app_id" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavigationDrawer"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PolicyActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StoreListActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentStartActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoInternetConnection"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BackNavigation"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TermsAndConditions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppointmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+        <service
+            android:name=".services.LocationService"
+            android:exported="true" />
+        <service
+            android:name=".services.TrackService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".receiver.LocationReceiver">
+            <intent-filter>
+                <action android:name="com.zetagile.TRACKING_ACTION"></action>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

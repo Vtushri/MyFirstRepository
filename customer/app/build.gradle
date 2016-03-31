@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId 'com.zetagile.foodcart'
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 5
+        versionName "0.0.2"
+        multiDexEnabled true
+    }
+    signingConfigs {
+        release {
+            storeFile file("za_keystore")
+            storePassword "Zet@15o7"
+            keyAlias "viandd_android"
+            keyPassword "Zet@15o7"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    output.outputFile = new File(output.outputFile.parent,
+                        output.outputFile.name.replace("app-release", "appname-" + "$versionName" )
+                    )
+                }
+            }
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles 'proguard-rules.pro'
+            applicationIdSuffix '.debug'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    output.outputFile = new File(output.outputFile.parent,
+                        output.outputFile.name.replace("app-debug", "appname-debug-" + "$versionName" )
+                    )
+                }
+            }
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2024M"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories { mavenCentral() }
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.google.android.gms:play-services-location:8.3.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'org.igniterealtime.smack:smack-android:4.1.4'
+    compile 'org.igniterealtime.smack:smack-tcp:4.1.4'
+    compile 'org.igniterealtime.smack:smack-extensions:4.1.0'
+    compile 'org.igniterealtime.smack:smack-sasl-provided:4.1.4'
+    compile 'com.android.support:design:23.1.1'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.8.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+}

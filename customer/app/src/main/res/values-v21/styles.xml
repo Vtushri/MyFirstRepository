@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="AppTheme" parent="CartTheme">
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="colorControlHighlight">@color/white_color</item>
+    </style>
+</resources>

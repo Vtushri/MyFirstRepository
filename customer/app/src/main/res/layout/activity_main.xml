@@ -1,0 +1,51 @@
+<com.zetagile.foodcart.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_scroll"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zetagile.foodcart.recyclerview.CustomRecyclerView
+            android:id="@+id/banner_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.zetagile.foodcart.recyclerview.CustomRecyclerView>
+
+        <LinearLayout
+            android:id="@+id/category_product_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner_list"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/category_product_list"
+            android:id="@+id/main_progress"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scrollbars="none">-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/home_layout"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:orientation="vertical"-->
+        <!--android:scrollbars="none"></LinearLayout>-->
+        <!--</ScrollView>-->
+
+    </RelativeLayout>
+</com.zetagile.foodcart.ObservableScrollView>
