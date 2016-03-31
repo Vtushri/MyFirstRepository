@@ -1,0 +1,138 @@
+######################################################
+## Copyright : Zetagile Info Solutions Pvt Ltd, 2015##
+######################################################
+
+version=0.0.1
+
+#########################################################################################################
+# Date            Task        Owner         Description
+# 17-12-2015                  ramesh        Adding customer and vendor app specific configuration dtails
+#########################################################################################################
+
+#### IMP NOTE #########
+#### Please ensure there are no space characters after every value defined
+#######################
+
+#jenkins job name and folder name under /var/lib/jenkins/jobs/$job/workspace/deployment/vendors/"Test12"/..... should be same
+
+#this field specifies where to push the war file(to dev or production machine)
+VIANDD.PROD_DEV=DEV
+#specifies whether to use the internal or external versioning on the components
+#FOR external versioning specify "EX" for internal "IN"
+VIANDD.IN_EX=IN
+#this name is used by the scripts and upstream jobs in jenkins and this name should be same
+CUSTOMER.APP_NAME.UPPER=Test12
+#this name is used for apk and war file naming purpose and to create some folders at server side..
+CUSTOMER.APP_NAME=Test12
+#Customer configurations
+#application name visible on the phone 
+CUSTOMER.APP_NAME_TO_DISPLAY=Test12
+#Aws Server(services server) ip address 
+CUSTOMER.AWS_SERVICES.IP=192.168.0.9
+#Aws Server port Number
+CUSTOMER.AWS_SERVICES.PORT=8080
+#Mysql database server ip address
+CUSTOMER.MY_SQL.IP=localhost
+#Mysql database server port number
+CUSTOMER.MY_SQL.PORT=3306
+#Mysql database server user name
+CUSTOMER.MY_SQL.USER_NAME=root
+#Mysql database server password
+CUSTOMER.MY_SQL.PASSWORD=123456
+#XMPP server ip address
+CUSTOMER.XMPP.SERVICE_IP=192.168.0.9
+#XMPP server port number
+CUSTOMER.XMPP.SERVICE_PORT=5222
+#XMPP domain ip address
+CUSTOMER.XMPP.DOMAIN_IP=192.168.0.9
+#Google maps api key
+CUSTOMER.GOOGLE.API_KEY=AIzaSyBlnV5huJ2yW_qzao79yLAx46ZTmOIqfNo
+#Facebook token to access vendors facebook page
+CUSTOMER.FACEBOOK.TOKEN=CAAX37GzwAuha1e6dZCxaegU
+#facebook page id 
+CUSTOMER.FACEBOOK.PAGE_ID=WZBXf5RAuha1e6dZCxaegU
+#facbook app id
+CUSTOMER.FACEBOOK.APP_ID=WZBXf5RSZAoha1e6dZCxaegU
+#facebook provider authority id
+CUSTOMER.FACEBOOK.PROVIDER_AUTHORITY=dCxaegU
+
+#Url for vendor wesite
+CUSTOMER.URL.WEBSITE=www.google.com
+#url for vendor photos
+CUSTOMER.URL.PHOTOS=
+#Url for vendor videos
+CUSTOMER.URL.VIDEOS=
+#Type of customer app..
+######################################
+###vendor specific configurations
+######################################
+#Type of customer app..
+#Supported LAYOUTs are TEXT_LAYOUT, IMAGE_LAYOUT
+CUSTOMER.LAYOUT=TEXT_LAYOUT
+#YES or NO options to enable or disable drive thru option respectively
+CUSTOMER.DISABLE_DRIVE_THRU=YES
+#disabling home delivery option
+CUSTOMER.DISABLE_HOME_DELIVERY=NO
+#disabling PICK UP DE option
+CUSTOMER.DISABLE_PICKUP=NO
+#vendor specific terms and conditions
+CUSTOMER.POLICY_URL=http:\/\/www.viandd.com\/Test12\/policy.pdf
+
+
+CUSTOMER.APP_ID=com.zetagile.dev1.customer
+
+
+#####################################
+#### Customer android app properties
+#####################################
+
+CUSTOMER.PAYMENT.PAYPAL=NO
+CUSTOMER.PAYMENT.COP=YES
+CUSTOMER.PAYMENT.SERVICE_CHARGES=YES
+CUSTOMER.PAYMENT.SERVICE_TAX=NO
+CUSTOMER.PAYMENT.OTHER_CHARGES=NO
+CUSTOMER.PAYMENT.VAT=YES
+
+#to display in customer app before payment i.e in strings.xml file
+
+CUSTOMER.DISPLAY.TOTAL_AMOUNT=Total Amount
+CUSTOMER.DISPLAY.SERVICE_CHARGES=Packing Charges
+CUSTOMER.DISPLAY.SERVICE_TAX=Service Tax
+CUSTOMER.DISPLAY.OTHER_CHARGES=Other Charges
+# Replace <VAT> with real value manually while setting value for CUSTOMER.PAYMENT.VALUE.VAT
+CUSTOMER.DISPLAY.VAT=VAT (5%)
+
+#IF CUSTOMER.PAYMENT.SERVICE_CHARGES=YES then set SERVICE_CHARGES_TYPE=TYPE1
+CUSTOMER.PAYMENT.VALUE.SERVICE_CHARGES_TYPE=TYPE1   
+#SET THE TYPE1 SERVICE CHARGE VALUE, IF THERE ARE MORE TYPE OF SERVICE CHARGES IN THE SIMILAR WAY WE CAN SET FOR THEM ALSO
+CUSTOMER.PAYMENT.VALUE.SERVICE_CHARGE_PARAM1=10.00
+CUSTOMER.PAYMENT.VALUE.SERVICE_TAX=0
+CUSTOMER.PAYMENT.VALUE.OTHER_CHARGES=0
+# Give % value here. Flat type is not supported. Modify CUSTOMER.DISPLAY.VAT property as well accordingly.
+CUSTOMER.PAYMENT.VALUE.VAT=5
+
+
+#########################################
+##########Vendor configurations
+#########################################
+
+#application name visible on vendors app
+VENDOR.APP_NAME_TO_DISPLAY=Store Monitor
+VENDOR.APP_NAME_DISPLAY_PHONE=dev1(Store Monitor)
+VENDOR.APP_ID=com.zetagile.dev1.vendor
+VENDOR.XMPP.SERVICE_IP=192.168.0.9
+VENDOR.XMPP.SERVICE_PORT=5222
+VENDOR.XMPP.DOMAIN_IP=192.168.0.9
+VENDOR.GOOGLE.API_KEY=AIzaSyDGpHAwQv66xwINxH3G15ZgF179TdupSM
+VENDOR.TOKEN_BASED_DELIVERY=YES
+VENDOR.PREPARATION_TIMES=10,20,30,40,50,60
+
+##########################################################################
+###########To handle jenkins jobs
+##########################################################################
+#this parameter decides whether to move the vendor apk to google play store or not at build time
+VENDOR.PUSH_TO_GOOGLE=NO
+#this parameter decides whether to move the customer apk to google play store or not at build time
+CUSTOMER.PUSH_TO_GOOGLE=NO
+FOLDER_NAME_FOR_S3_STORAGE=20160112-12
+
